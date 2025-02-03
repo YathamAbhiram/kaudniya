@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>KMDS</title>
+<link rel="icon" type="" href="asserts/pra10.png">
+
+    <link rel="stylesheet" href="gos.css">  <!-- Linking to external CSS -->
+    <style>
+          /* Adding some basic styles for mobile and desktop responsiveness */
+/* General Styling */
+nav {
+    background: forestgreen;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+        text-align: right;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: forestgreen;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+
+
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+<img src="asserts/pralog.png" alt="Ashram Logo" class="header-logo">
+
+        <h1>Welcome to Our Old Age Home</h1>
+    </header>
+
+    <nav>
+        <!-- Menu Icon for Mobile -->
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+        <!-- Navigation Links -->
+        <ul id="nav-list">
+            <li><a href="pr2.html">Home</a></li>
+            <li><a href="gos.html">Goshala</a></li>
+            <li><a href="nity.html">Nithya Annadhanam</a></li>
+            <li><a href="orp.html">Orphanage</a></li>
+            <li><a href="old.html">Old Age Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+<p><u>"Caring for the elderly is not a duty, but a sacred blessing in the path of Dharma."</u></p>
+        <div class="post">
+            <img src="asserts/praold2.png" alt="Cow Management">
+            <div class="post-info">
+                <h2><u>Vruddha Seva</u></h2>            
+<p>✅Providing a peaceful and spiritual home for senior citizens.</p>
+<p>✅Ensuring their physical, emotional, and mental well-being through care and companionship.</p>
+<p>✅Treating them with love and respect, as emphasized in Hindu scriptures.</p>
+            </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/praold3.png" alt="Milk Production">
+            <div class="post-info">
+                    <h2><u>Self-Sustainability & Skill-Based Engagement
+</u></h2>
+ 
+<p>✅Encouraging elders to contribute through teaching, storytelling, and mentoring younger generations.</p>
+<p>✅Engaging them in activities like temple maintenance, gardening, and handicrafts.</p>
+<p>✅Providing opportunities for self-expression through music, art, and cultural programs.</p>
+
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="asserts/praold4.png">
+            <div class="post-info">
+                 <h2><u>Yoga & Ayurveda for Health & Longevity</u></h2>                                                    
+<p>✅Providing Yoga and Pranayama sessions to maintain physical and mental health.</p>
+
+<p>✅Offering Ayurvedic treatments, herbal therapies, and Panchakarma for well-being.</p>
+
+<p>✅Organizing regular medical checkups with holistic healing approaches.   </p>
+ </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/praold5.png">
+            <div class="post-info">
+                <h2><u>Spiritual Growth & Bhakti Yoga </u></h2>                  
+<p>✅Encouraging daily Bhajans, Kirtans, and temple visits for spiritual connection.</p> 
+<p>✅Teaching meditation and chanting of Vedic mantras for inner peace.</p> 
+<p>✅Organizing religious discourses to deepen their understanding of Dharma.</p> 
+
+
+            </div>
+        </div>
+<div class="post">
+            <img src="asserts/praold6.png">
+            <div class="post-info">
+                 <h2><u>Vedic & Spiritual Practices</u></h2>                                               
+
+<p>✅Conducting daily prayers, Vedic chanting, and Bhagavad Gita discourses for spiritual upliftment.</p>
+<p>✅Encouraging participation in Bhajans, Kirtans, and Satsangs for mental peace.</p>
+<p>✅Arranging pilgrimages and temple visits for elderly residents.    </p>        </div>
+        </div
+
+    </div>
+<script>
+        // Toggle Menu Function for Mobile View
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 oldage Home. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

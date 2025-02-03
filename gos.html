@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMDS</title>
+    <link rel="icon" type="" href="asserts/pra10.png">
+    <link rel="stylesheet" href="gos.css">  <!-- Linking to external CSS -->
+    <style>
+         /* Adding some basic styles for mobile and desktop responsiveness */
+/* General Styling */
+nav {
+    background: forestgreen;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+        text-align: right;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: forestgreen;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+
+
+}
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+<img src="asserts/pralog.png" alt="Ashram Logo" class="header-logo">
+
+        <h1>Welcome to Our Goshala</h1>
+    </header>
+
+    <nav>
+        <!-- Menu Icon for Mobile -->
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+        <!-- Navigation Links -->
+        <ul id="nav-list">
+            <li><a href="pr2.html">Home</a></li>
+            <li><a href="gos.html">Goshala</a></li>
+            <li><a href="nity.html">Nithya Annadhanam</a></li>
+            <li><a href="orp.html">Orphanage</a></li>
+            <li><a href="old.html">Old Age Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+<p><u>"Caring for cows is caring for nature, Dharma, and the divine".</u></p>
+        <div class="post">
+            <img src="asserts/pra55.png" alt="Cow Management">
+            <div class="post-info">
+                <h2><u>Cow Management</u></h2>
+                <p><b>✅ Cow Registration:</b> Store details like Name, Breed, Age, Gender, Date of Birth, and Unique ID equally.</p>
+                <p><b>✅ Health & Vaccination Records:</b> Maintain medical history, including vaccinations, and treatments equally.</p>
+                <p><b>✅ Adoption:</b> Allow devotees to adopt a cow, with updates about their adopted cow equally.</p>
+                <p><b>✅ Photo Gallery:</b> Maintain images of each cow for easy identification equally.</p>
+                <p><b>✅ Cow Status Reports:</b> Generate health check reports, birth/death reports, and activity logs equally.</p>
+                <p><b>✅ Daily Care Schedule:</b> Assign caretakers for each cow, tracking their feeding and cleaning schedules equally.</p>
+            </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/pr
+77.png" alt="Milk Production">
+            <div class="post-info">
+                <h2><u>Milk Production & Distribution</u></h2>
+                <p><b>✅ Milk Collection Logs:</b> Maintain records of daily milk yield per cow equally.</p>
+                <p><b>✅ Storage & Processing:</b> Track milk stored in liters, processing into ghee, curd, butter, and paneer equally.</p>
+                <p><b>✅ Quality Control:</b> Maintain hygiene and testing protocols before milk is distributed equally.</p>
+                <p><b>✅ Analytics & Reports:</b> Generate monthly and yearly reports on milk production and usage equally.</p>
+                <p><b>✅ Internal Distribution:</b> Allocate milk for Ashram food preparation (Nithya Annadhanam), temple rituals, and volunteers equally.</p>
+                <p><b>✅ External Sales & Donations:</b> Provide excess milk to the local community or distribute it as charity equally.</p>
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="asserts/pra88.png">
+            <div class="post-info">
+                <h2><u>Natural Farming & Organic Products</u></h2>
+                <p><b>✅ Cow Dung for Organic Manure:</b> Convert cow dung into organic fertilizers for farming equally.</p>
+                <p><b>✅ Panchagavya & Natural Medicines:</b> Produce Ayurvedic medicines, incense sticks, and organic pesticides from cow urine equally.</p>
+                <p><b>✅ Goshala-Based Organic Farming:</b> Cultivate grains, fruits, and vegetables using natural fertilizers equally.</p>
+                <p><b>✅ Bio-Gas Production:</b> Set up biogas plants using cow dung to generate cooking gas for the ashram equally.</p>
+                <p><b>✅ Sell Organic Products:</b> Offer products like A2 milk, ghee, honey, herbal medicines, and incense sticks equally.</p>
+            </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/pra99.png">
+            <div class="post-info">
+                <h2><u>Feed & Nutrition Management</u></h2>
+                <p><b>✅ Daily Feeding Schedule:</b> Maintain records of feeding times for each cow equally.</p>
+                <p><b>✅ Types of Feed:</b> Track grass, dry fodder, grains, silage, mineral supplements, and water supply equally.</p>
+                <p><b>✅ Fodder Stock Management:</b> Keep inventory of available fodder stock and reorder alerts equally.</p>
+                <p><b>✅ Special Nutrition for Pregnant & Sick Cows:</b> Adjust feeding plans based on health conditions equally.</p>
+                <p><b>✅ Reports & Analytics:</b> Track monthly expenses on feed and monitor food consumption per cow equally.</p>
+            </div>
+        </div>
+
+    </div>
+<script>
+        // Toggle Menu Function for Mobile View
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Goshala. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

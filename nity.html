@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMDS</title>
+<link rel="icon" type="" href="asserts/pra10.png">
+<link rel="stylesheet" href="gos.css"> 
+
+    <style>
+        /* Adding some basic styles for mobile and desktop responsiveness */
+/* General Styling */
+nav {
+    background: forestgreen;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+        text-align: right;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: forestgreen;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+
+
+}
+
+             
+    </style>
+</head>
+<body>
+
+    <header>
+<img src="asserts/pralog.png" alt="Ashram Logo" class="header-logo">
+
+        <h1>Welcome to Our Nityannadanam</h1>
+    </header>
+
+    <nav>
+        <!-- Menu Icon for Mobile -->
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+        <!-- Navigation Links -->
+        <ul id="nav-list">
+            <li><a href="pr2.html">Home</a></li>
+            <li><a href="gos.html">Goshala</a></li>
+            <li><a href="nity.html">Nithya Annadhanam</a></li>
+            <li><a href="orp.html">Orphanage</a></li>
+            <li><a href="old.html">Old Age Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+<p><u>"Nityannadhanam - the will of service that gives hope to every
+hunger."</u></p>
+        <div class="post">
+            <img src="asserts/prani1.png" alt="Cow Management">
+            <div class="post-info">
+                <h2><u>Nityannadhanam</u></h2>
+                <p><b>✅ Poor & Needy People</b>– Those who struggle for daily meals.</p>
+
+<p><b>✅ Visitors & Devotees</b> – People visiting the ashram for spiritual and seva activities.</p>
+
+<p><b>✅ Sadhu & Sannyasis</b> – Saints and seekers who follow spiritual paths.</p>
+
+<p><b>✅ Ashram Residents</b> – Elderly, orphans, and other dependents staying in the ashram.</p>
+
+<p><b>✅ Cows & Animals</b> – As part of Goseva, ensuring proper nourishment.</p>
+
+
+            </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/prani2.png" alt="Milk Production">
+            <div class="post-info">
+                    <h2><u>Food Serving & Distribution</u></h2>
+                    
+                    
+                <p>  ✅ Organizes community meals or free meal programs at the ashram.</p>
+
+<p>✅ Maintains a seating arrangement for smooth serving.</p>
+
+<p>✅ Assigns volunteers to ensure food reaches every person without discrimination.</p>
+
+<p>✅ Records daily meal counts for effective planning.</p>
+
+
+<p>Example: If 300 people visit daily, the system calculates food portions accordingly to minimize waste.</p>
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="asserts/prani3.png">
+            <div class="post-info">
+                 <h2><u>Kitchen & Cooking Management</u></h2>
+                    
+                    
+                     
+ <p>✅ Uses Goshala’s dairy products (milk, ghee, curd) for Sattvic meals.</p>
+
+<p>✅ Prepares meals in a traditional, hygienic manner using organic ingredients.</p>
+
+<p>✅ Follows Ayurvedic and Sattvic food guidelines to ensure balanced nutrition.</p>
+<p>✅ Uses fresh, organic, and chemical-free ingredients.</p>
+
+<p>✅ Prepares special meals during festivals using cow-based products like panchagavya.</p>
+
+
+<p>Example: Daily meals include chapati, dal, rice, buttermilk, and cow ghee, while festive meals include payasam made with Goshala milk.</p>
+
+            </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/prani4.png">
+            <div class="post-info">
+                <h2><u>Donation & Fundraising Management </u></h2>
+                    
+                    
+ <p>✅ Organizes donations (cash, rice, vegetables, groceries, etc.).</p>
+
+ <p>✅ Maintains donor records, contributions, and receipts.</p>
+
+ <p>✅ Conducts fundraising events and digital donation campaigns.</p>
+
+ <p>✅ Ensures transparent usage of funds for food procurement.</p>
+
+
+<p>Example: If a devotee donates ₹10,000 or 100 kg of rice, the system records it and updates stock levels.</p>
+
+            </div>
+        </div>
+
+    </div>
+<script>
+        // Toggle Menu Function for Mobile View
+        function toggleMenu() {
+            var navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Nitya Anadhanam. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

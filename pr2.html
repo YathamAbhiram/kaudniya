@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMDS</title>
+<link rel="icon" type="" href="asserts/pra10.png">
+    <link rel="stylesheet" href="pr1.css">
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        .header-container {
+            background: oliverdrab;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+       .header-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .header-container h1 {
+            font-size: 24px;
+        }
+
+
+        /* Navigation */
+        nav {
+            background: oliverdrab;
+            padding: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+        }
+
+        /* Responsive Navigation */
+        .menu-icon {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+        /* Main Content */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .module-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .module-section img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container h1 {
+                font-size: 20px;
+            }
+
+            .menu-icon {
+                display: block;
+                text-align: centre;
+            }
+
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                background: forestgreen;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+
+            .gallery img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+<img src="asserts/pralog.png" alt="Ashram Logo" class="header-logo">
+            <h1>Sri Sri Sri Kaundinya Maharshi Sanatana Dharma Sthapana Ashram</h1>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="pr2.html">Home</a></li>
+                    <li><a href="gos.html">Goshala</a></li>
+                    <li><a href="nity.html">Nithya Annadhanam</a></li>
+                    <li><a href="orp.html">Orphanage</a></li>
+                    <li><a href="old.html">Old Age Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <h2>Welcome to Kaudinya Maharshi Dharma Sthapana</h2>
+            <p>Our mission is to preserve and promote Sanatana Dharma through various initiatives like Goshala, Nithya Annadhanam, Orphanage, and Old Age Home 
+</p>
+    <div class="gallery">
+                <img src="asserts/pra10.png" alt="Image 1">
+               
+            </div>
+        </section>
+<section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p><b>Address:</b> Chandra Babu Naidu Colony,SPSR Nellore District,SPSR Nellore Mandal</p>
+           <div class="info-container">
+        <!-- Name Icon -->
+        <div class="info-item">
+            <i class="fas fa-user"></i>
+            <p><b>Name</b>: Dasari Sai Sreenivasulu</p>
+        </div>
+
+        <!-- Contact Icon -->
+        <div class="info-item">
+           <i class="fa fa-phone"></i>
+            <p><b>Contact:</b> +91 9441287609</p>
+        </div>
+    </div>
+
+        </section>
+
+    </main> 
+
+    <footer>
+        <p>&copy; 2025 Kaudinya Maharshi Dharma Sthapana. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

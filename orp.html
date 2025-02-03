@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KMDS</title>
+<link rel="icon" type="" href="asserts/pra10.png">
+
+    <link rel="stylesheet" href="gos.css">  <!-- Linking to external CSS -->
+    <style>
+             /* Adding some basic styles for mobile and desktop responsiveness */
+/* General Styling */
+nav {
+    background: forestgreen;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+        text-align: right;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: forestgreen;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+
+
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+<img src="asserts/pralog.png" alt="Ashram Logo" class="header-logo">
+
+        <h1>Welcome to Our Orphanage</h1>
+    </header>
+
+    <nav>
+        <!-- Menu Icon for Mobile -->
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+        <!-- Navigation Links -->
+        <ul id="nav-list">
+            <li><a href="pr2.html">Home</a></li>
+            <li><a href="gos.html">Goshala</a></li>
+            <li><a href="nity.html">Nithya Annadhanam</a></li>
+            <li><a href="orp.html">Orphanage</a></li>
+            <li><a href="old.html">Old Age Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+<p><u>"Every orphan deserves love, care, and a future filled with hope."</u></p>
+        <div class="post">
+            <img src="asserts/praor2.png" alt="Cow Management">
+            <div class="post-info">
+                <h2><u>Anadha Seva</u></h2>
+                
+
+ <p>✅Providing a safe and loving home for orphaned children.</p>
+ <p>✅Ensuring basic necessities like food, clothing, and healthcare.</p>
+ <p>✅Creating a family-like atmosphere where children feel emotionally secure.</p>
+            </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/praor3.png" alt="Milk Production">
+            <div class="post-info">
+                    <h2><u>Vedic & Moral Education</u></h2>
+ <p>✅Teaching Hindu scriptures like the Bhagavad Gita, Upanishads, and Ramayana.</p>
+
+ <p>✅Instilling moral values like truthfulness, compassion, and self-discipline.</p>
+
+ <p>✅Conducting daily prayers and storytelling sessions on Sanatana Dharma principles.</p>
+
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="asserts/praor4.png">
+            <div class="post-info">
+                 <h2><u>Yoga & Meditation for Mental Strength</u></h2>
+                    
+                    
+                     
+
+<p>✅Conducting daily Yoga sessions to improve concentration and physical fitness.</p>
+<p>✅Teaching meditation techniques to help children develop emotional stability.</p>
+<p>✅Promoting holistic wellness through breath control (Pranayama) and mindfulness.</p>            </div>
+        </div>
+
+        <div class="post reverse">
+            <img src="asserts/praor7.png">
+            <div class="post-info">
+                <h2><u>Spiritual Growth & Bhakti Yoga </u></h2>                  
+<p>✅Encouraging daily Bhajans, Kirtans, and temple visits for spiritual connection.</p> 
+<p>✅Teaching meditation and chanting of Vedic mantras for inner peace.</p> 
+<p>✅Organizing religious discourses to deepen their understanding of Dharma.</p> 
+
+
+            </div>
+        </div>
+<div class="post">
+            <img src="asserts/praor8.png">
+            <div class="post-info">
+                 <h2><u>Healthcare & Ayurveda for Well-being</u></h2>
+                                                      
+
+
+<p>✅Providing free healthcare facilities, including regular checkups.</p> 
+<p>✅Using Ayurvedic treatments and natural remedies for physical health.</p> 
+<p>✅Offering mental health support through Yoga and meditation.</p> 
+
+            </div>
+        </div
+
+    </div>
+<script>
+        // Toggle Menu Function for Mobile View
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 orphnage. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
